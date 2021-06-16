@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Div = styled.div`
   height: 100vh;
+  padding-top: 95px;
      @media (${({ theme }) => theme.device.laptopL}) { 
        padding-top: 80px;
     }

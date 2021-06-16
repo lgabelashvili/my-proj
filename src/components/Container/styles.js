@@ -13,5 +13,11 @@ export const Div = styled.div`
   @media (${({ theme }) => theme.device.laptop}) { 
       padding: 0 40px;
   }
+   @media (${({ theme }) => theme.device.mobileL}) { 
+      padding: 0 25px;
+  }
+   @media (${({ theme }) => theme.device.mobileM}) { 
+      padding: 0 20px;
+  }
   ${({ costumeStyles }) => costumeStyles};
 `;

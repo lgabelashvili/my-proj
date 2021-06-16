@@ -51,6 +51,12 @@ export const containerStylesLogo = css`
       height: 100%;
       background-color: white;
   }
+    @media (${({ theme }) => theme.device.mobileL}) { 
+      padding: 0 25px;
+  }
+   @media (${({ theme }) => theme.device.mobileM}) { 
+      padding: 0 20px;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -86,12 +92,15 @@ export const Logo = styled.img`
 export const NavList = styled.ul`
   display: flex;
   gap: 44px;
-  padding: 0;
+  padding: 0 20px;
    @media ${({ theme }) => theme.device.laptop} { 
       gap: 30px;
   }
   @media (${({ theme }) => theme.device.tablet}) { 
     gap: 30px;
+  }
+   @media (${({ theme }) => theme.device.mobileL}) { 
+    gap: 20px;
   }
 `;
 
@@ -99,8 +108,11 @@ export const NavItem = styled.li`
   list-style-type: none;
   cursor: pointer;
   font-size: 18px;
-  font-family: Sofia-Pro;
-   @media (${({ theme }) => theme.device.tablet}) { 
+  font-family: Sofia-Semi-Bold;
+  @media (${({ theme }) => theme.device.laptopL}) { 
+    font-size: 16px;
+  }
+   @media (${({ theme }) => theme.device.laptop}) { 
     font-size: 14px;
   }
     @media (${({ theme }) => theme.device.mobileL}) { 
