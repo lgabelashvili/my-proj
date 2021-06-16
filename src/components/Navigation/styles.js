@@ -73,7 +73,6 @@ export const Nav = styled.nav`
      width: 100%;
      background-color: #FFFFFF;
      height: 50px;
-     visibility: ${({ isOpen }) => (isOpen ? 'visible' : 'hidden')};
      z-index: 0;
      transform: translateY(${({ isOpen }) => (isOpen ? '100%' : '0')});
   }

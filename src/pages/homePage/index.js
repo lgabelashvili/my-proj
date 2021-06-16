@@ -1,9 +1,14 @@
-import { Header, Reviews } from '../../components/HomePage';
+import {
+  Header,
+  Reviews,
+  Products,
+} from '../../components/HomePage';
 
 const HomePage = () => (
   <>
     <Header />
     <Reviews />
+    <Products />
   </>
 );
 
