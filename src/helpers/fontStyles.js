@@ -19,6 +19,8 @@ import SofiaUltraLightItalic from '../assets/fonts/Sofia Pro UltraLight Italic A
 const FontStyles = createGlobalStyle`
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {

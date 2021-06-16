@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom';
 const activeClassName = 'nav-item-active';
 
 export const NavComponent = styled.div`
+    position: fixed;
+    width: 100%;
+    top: 0;
     height: 95px;
     @media (${({ theme }) => theme.device.laptopL}) { 
        height: 80px;
