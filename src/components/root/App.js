@@ -9,6 +9,7 @@ import { Div } from './styles';
 import theme from '../../helpers/themes';
 import FontStyles from '../../helpers/fontStyles';
 import Navigation from '../Navigation';
+import Footer from '../Footer';
 
 const App = () => (
   <ThemeProvider theme={theme}>
@@ -26,6 +27,7 @@ const App = () => (
             />
           ))}
         </Switch>
+        <Footer />
       </Router>
     </Div>
   </ThemeProvider>
