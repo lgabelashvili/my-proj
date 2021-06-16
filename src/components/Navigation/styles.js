@@ -8,6 +8,7 @@ export const NavComponent = styled.div`
     width: 100%;
     top: 0;
     height: 95px;
+    z-index: 999999;
     @media (${({ theme }) => theme.device.laptopL}) { 
        height: 80px;
     }
