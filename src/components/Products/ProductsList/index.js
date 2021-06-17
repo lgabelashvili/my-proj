@@ -26,167 +26,28 @@ const ProductsList = () => (
               types of credit issues - and we can help you!`}
       </PageDesc>
       <List>
-        <ListBox>
-          <Header>
-            <HeaderImg alt="" src={alistataLogo} />
-          </Header>
-          <Ul>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-          </Ul>
-          <Footer>
-            <Button>Visit Website</Button>
-            <Score>
-              9.7
-              <span>/10</span>
-              <FooterLink>Read Review</FooterLink>
-            </Score>
-          </Footer>
-        </ListBox>
-        <ListBox>
-          <Header>
-            <HeaderImg alt="" src={alistataLogo} />
-          </Header>
-          <Ul>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-          </Ul>
-          <Footer>
-            <Button>Visit Website</Button>
-            <Score>
-              9.7
-              <span>/10</span>
-              <FooterLink>Read Review</FooterLink>
-            </Score>
-          </Footer>
-        </ListBox>
-        <ListBox>
-          <Header>
-            <HeaderImg alt="" src={alistataLogo} />
-          </Header>
-          <Ul>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-          </Ul>
-          <Footer>
-            <Button>Visit Website</Button>
-            <Score>
-              9.7
-              <span>/10</span>
-              <FooterLink>Read Review</FooterLink>
-            </Score>
-          </Footer>
-        </ListBox>
-        <ListBox>
-          <Header>
-            <HeaderImg alt="" src={alistataLogo} />
-          </Header>
-          <Ul>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-          </Ul>
-          <Footer>
-            <Button>Visit Website</Button>
-            <Score>
-              9.7
-              <span>/10</span>
-              <FooterLink>Read Review</FooterLink>
-            </Score>
-          </Footer>
-        </ListBox>
-        <ListBox>
-          <Header>
-            <HeaderImg alt="" src={alistataLogo} />
-          </Header>
-          <Ul>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-          </Ul>
-          <Footer>
-            <Button>Visit Website</Button>
-            <Score>
-              9.7
-              <span>/10</span>
-              <FooterLink>Read Review</FooterLink>
-            </Score>
-          </Footer>
-        </ListBox>
-        {' '}
-        <ListBox>
-          <Header>
-            <HeaderImg alt="" src={alistataLogo} />
-          </Header>
-          <Ul>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-          </Ul>
-          <Footer>
-            <Button>Visit Website</Button>
-            <Score>
-              9.7
-              <span>/10</span>
-              <FooterLink>Read Review</FooterLink>
-            </Score>
-          </Footer>
-        </ListBox>
-        <ListBox>
-          <Header>
-            <HeaderImg alt="" src={alistataLogo} />
-          </Header>
-          <Ul>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit</Li>
-          </Ul>
-          <Footer>
-            <Button>Visit Website</Button>
-            <Score>
-              9.7
-              <span>/10</span>
-              <FooterLink>Read Review</FooterLink>
-            </Score>
-          </Footer>
-        </ListBox>
-        <ListBox>
-          <Header>
-            <HeaderImg alt="" src={alistataLogo} />
-          </Header>
-          <Ul>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-            <Li>Special financing for Bad Credit</Li>
-            <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-          </Ul>
-          <Footer>
-            <Button>Visit Website</Button>
-            <Score>
-              9.7
-              <span>/10</span>
-              <FooterLink>Read Review</FooterLink>
-            </Score>
-          </Footer>
-        </ListBox>
+        {new Array(20).fill().map(() => (
+          <ListBox key={Math.random()}>
+            <Header>
+              <HeaderImg alt="" src={alistataLogo} />
+            </Header>
+            <Ul>
+              <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
+              <Li>Special financing for Bad Credit</Li>
+              <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
+              <Li>Special financing for Bad Credit</Li>
+              <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
+            </Ul>
+            <Footer>
+              <Button>Visit Website</Button>
+              <Score>
+                9.7
+                <span>/10</span>
+                <FooterLink>Read Review</FooterLink>
+              </Score>
+            </Footer>
+          </ListBox>
+        ))}
       </List>
     </Container>
   </Box>

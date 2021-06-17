@@ -14,11 +14,9 @@ const Footer = () => (
     <Container costumeStyles={containerStyles}>
       <NavList>
         {routes.map((route) => (
-          <>
-            {!route.isHiddenMenu && (
-              <NavItem><Link to={route.path}>{route.name}</Link></NavItem>
-            )}
-          </>
+          !route.isHiddenMenu && (
+          <NavItem key={Math.random()}><Link to={route.path}>{route.name}</Link></NavItem>
+          )
         ))}
       </NavList>
       <AllRightReserved>© 2021. All Rights Reserved.</AllRightReserved>

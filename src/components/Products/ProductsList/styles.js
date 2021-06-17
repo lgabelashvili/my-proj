@@ -58,8 +58,10 @@ export const ListBox = styled.div`
   border-radius: 10px;
   background: #e5e9ee;
   max-width: 400px;
-  margin: auto;
   height: 100%;
+     @media (${({ theme }) => theme.device.tablet}) { 
+      margin: auto;
+  }
 `;
 
 export const Header = styled.div`
@@ -72,14 +74,18 @@ export const Header = styled.div`
   margin-bottom: 10px;
 `;
 export const HeaderImg = styled.img`
+  height: 50px;
   @media (${({ theme }) => theme.device.laptopL}) { 
       width: 170px;
+      height: 45px;
   }
    @media (${({ theme }) => theme.device.tablet}) { 
-      width: 150px;
+      width: 140px;
+      height: 40px;
   }
   @media (${({ theme }) => theme.device.mobileL}) { 
-     width: 130px;
+     width: 120px;
+     height: 35px;
   }
 `;
 
@@ -108,6 +114,15 @@ export const Li = styled.li`
     top: 0;
     transform: translate(-15px, 120%);
   }
+  @media (${({ theme }) => theme.device.laptopL}) { 
+      font-size: 15px;
+  }
+   @media (${({ theme }) => theme.device.tablet}) { 
+      font-size: 14px;
+  }
+  @media (${({ theme }) => theme.device.mobileL}) { 
+     font-size: 13px;
+  }
 `;
 
 export const Footer = styled.div`
@@ -115,6 +130,16 @@ export const Footer = styled.div`
   justify-content: space-between;
   gap: 20px;
   padding: 40px 30px;
+     @media (${({ theme }) => theme.device.laptop}) { 
+      padding: 35px 28px 20px;
+  }
+   @media (${({ theme }) => theme.device.tablet}) { 
+      padding: 30px 28px 20px;
+  }
+     @media (${({ theme }) => theme.device.mobileL}) { 
+      padding: 5px 20px 15px;
+      font-size: 12px;
+  }
 `;
 
 export const Button = styled.button`
@@ -141,6 +166,10 @@ export const Button = styled.button`
       padding: 8px;
       font-size: 14px;
   }
+     @media (${({ theme }) => theme.device.mobileL}) { 
+      padding: 2px 8px;
+      font-size: 12px;
+  }
 `;
 
 export const Score = styled.p`
@@ -161,6 +190,9 @@ export const Score = styled.p`
       @media (${({ theme }) => theme.device.tablet}) { 
          font-size: 18px;
       }
+      @media (${({ theme }) => theme.device.mobileL}) { 
+         font-size: 16px;
+      }
 `;
 
 export const FooterLink = styled.a`
@@ -179,6 +211,9 @@ export const FooterLink = styled.a`
       }
       @media (${({ theme }) => theme.device.tablet}) { 
          font-size: 15px;
+      }
+      @media (${({ theme }) => theme.device.mobileL}) { 
+         font-size: 13px;
       }
 
 `;
