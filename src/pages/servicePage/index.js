@@ -2,6 +2,7 @@ import {
   Header,
   Offers,
   ApplyLoan,
+  Advertisment,
 } from '../../components/ServiceType';
 
 const ServicePage = () => (
@@ -9,6 +10,7 @@ const ServicePage = () => (
     <Header />
     <Offers />
     <ApplyLoan />
+    <Advertisment />
   </>
 );
 
