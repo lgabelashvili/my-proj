@@ -100,7 +100,7 @@ const Header = () => {
           ))}
           {step === 2 && agreementList.map((el) => (
             <SelectBox key={el.img} onClick={() => setStep(step + 1)}>
-              <SelectBoxImg src={el.img} />
+              <SelectBoxImg src={el.img} isAgreement />
               {el.title}
             </SelectBox>
           ))}
