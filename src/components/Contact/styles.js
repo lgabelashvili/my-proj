@@ -225,3 +225,35 @@ export const TextArea = styled.textarea`
      font-size: 12px;
   }
 `;
+
+export const Button = styled.button`
+   background: #1390f4;
+   padding: 20px 150px;
+   width: max-content;
+   border: 0;
+   margin-left: auto;
+   font-size: 22px;
+   font-family: Sofia-Bold;
+   color: white;
+   border-radius: 10px;
+   &:focus {
+     outline: none;
+   }
+   @media (${({ theme }) => theme.device.laptopL}) { 
+    font-size: 21px;
+    padding: 18px 140px;
+  }
+  @media (${({ theme }) => theme.device.laptop}) { 
+    font-size: 18px;
+    padding: 15px 130px;
+  }
+  @media (${({ theme }) => theme.device.tablet}) { 
+    font-size: 17px;
+    padding: 10px 120px;
+  }
+  @media (${({ theme }) => theme.device.mobileL}) { 
+     margin: auto;
+     width: 100%;
+     padding: 10px 2px;
+  }
+`;

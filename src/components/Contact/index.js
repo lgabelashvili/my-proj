@@ -10,6 +10,7 @@ import {
   InputWrapper,
   Input,
   TextArea,
+  Button,
 } from './styles';
 import Container from '../Container';
 
@@ -30,6 +31,7 @@ const Contact = () => (
           <Input name="email" placeholder="Email (Required)" />
         </InputWrapper>
         <TextArea placeholder="Message (Required)" rows={6} />
+        <Button onClick={(e) => e.preventDefault()}>Send</Button>
       </Form>
     </Box>
   </Container>

@@ -1,5 +1,6 @@
 import HomePage from '../pages/homePage';
 import ContactPage from '../pages/contactPage';
+import ProductsPage from '../pages/productsPage';
 
 export const routes = [
   {
@@ -10,12 +11,18 @@ export const routes = [
   {
     name: 'Products',
     component: ContactPage,
-    path: '/contact',
+    path: '/products',
+  },
+  {
+    name: 'Product Page',
+    component: ProductsPage,
+    path: '/product/:productsName',
+    isHiddenMenu: true,
   },
   {
     name: 'About Us',
     component: ContactPage,
-    path: '/contact',
+    path: '/about',
   },
   {
     name: 'Contact',

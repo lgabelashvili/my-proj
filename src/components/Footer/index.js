@@ -13,7 +13,13 @@ const Footer = () => (
   <Div>
     <Container costumeStyles={containerStyles}>
       <NavList>
-        {routes.map((route) => <NavItem><Link to={route.path}>{route.name}</Link></NavItem>)}
+        {routes.map((route) => (
+          <>
+            {!route.isHiddenMenu && (
+              <NavItem><Link to={route.path}>{route.name}</Link></NavItem>
+            )}
+          </>
+        ))}
       </NavList>
       <AllRightReserved>© 2021. All Rights Reserved.</AllRightReserved>
     </Container>

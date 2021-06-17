@@ -28,9 +28,13 @@ export const Navigation = () => {
         <Nav isOpen={isOpen}>
           <NavList>
             {routes.map((route) => (
-              <NavItem key={Math.random()}>
-                <StyledLink exact={route.path === '/'} to={route.path}>{route.name}</StyledLink>
-              </NavItem>
+              <>
+                {!route.isHiddenMenu && (
+                  <NavItem key={Math.random()}>
+                    <StyledLink exact={route.path === '/'} to={route.path}>{route.name}</StyledLink>
+                  </NavItem>
+                )}
+              </>
             ))}
           </NavList>
         </Nav>

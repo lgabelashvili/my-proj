@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 export const Div = styled.div`
   background: #191b1d;
   padding: 25px 0;
+  width: 100%;
     @media (${({ theme }) => theme.device.laptop}) { 
       padding: 20px 0;
     }
