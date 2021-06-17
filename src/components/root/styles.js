@@ -4,6 +4,7 @@ export const Div = styled.div`
   min-height: 100vh;
   padding-top: 95px;
   display: grid;
+  grid-template-rows: 1fr minmax(max-content, 0);
      @media (${({ theme }) => theme.device.laptopL}) { 
        padding-top: 80px;
     }

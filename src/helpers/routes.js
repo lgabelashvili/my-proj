@@ -10,13 +10,8 @@ export const routes = [
   },
   {
     name: 'Products',
-    component: ContactPage,
-    path: '/products',
-  },
-  {
-    name: 'Product Page',
     component: ProductsPage,
-    path: '/product/:productsName',
+    path: '/product/:productsName/:id?',
     isHiddenMenu: true,
   },
   {

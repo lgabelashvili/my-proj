@@ -1,27 +1,24 @@
 import styled, { css } from 'styled-components';
 
 export const Box = styled.div`
-  width: 100%;
-  max-width: 1260px;
-  margin: 100px auto 0;
+  display: flex;
+  background-color: #f9fafb;
+  padding: 100px 0 0;
   @media (${({ theme }) => theme.device.laptopL}) { 
-     margin-top: 80px;
+     padding-top: 80px;
   }
   @media (${({ theme }) => theme.device.laptop}) { 
-       margin-top: 70px;
+      padding-top: 70px;
   }
   @media (${({ theme }) => theme.device.tablet}) { 
-     margin-top: 55px;
+     padding-top: 55px;
   }
 `;
 
 export const containerStyles = css`
-  display: flex;
-  height: 100%;
-  background-color: #f9fafb;
-  @media (${({ theme }) => theme.device.tablet}) { 
-    height: auto;
-  }
+   width: 100%;
+  max-width: 1260px;
+
 `;
 
 export const Title = styled.h1`

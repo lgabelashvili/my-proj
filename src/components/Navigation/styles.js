@@ -38,6 +38,7 @@ export const containerStylesLogo = css`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: initial;
    @media (${({ theme }) => theme.device.laptopL}) { 
        padding: 0
     }

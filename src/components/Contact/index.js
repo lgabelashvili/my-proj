@@ -15,8 +15,8 @@ import {
 import Container from '../Container';
 
 const Contact = () => (
-  <Container costumeStyles={containerStyles}>
-    <Box>
+  <Box>
+    <Container costumeStyles={containerStyles}>
       <Title>This is example text</Title>
       <SubTitle>This is example text which will be replaced later</SubTitle>
       <Ul>
@@ -33,8 +33,8 @@ const Contact = () => (
         <TextArea placeholder="Message (Required)" rows={6} />
         <Button onClick={(e) => e.preventDefault()}>Send</Button>
       </Form>
-    </Box>
-  </Container>
+    </Container>
+  </Box>
 
 );
 

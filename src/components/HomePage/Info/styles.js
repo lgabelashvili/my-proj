@@ -118,7 +118,7 @@ export const Button = styled.button`
     @media (${({ theme }) => theme.device.laptop}) { 
        padding: 12px 35px;
     }
-    @media (${({ theme }) => theme.device.laptop}) { 
+    @media (${({ theme }) => theme.device.tablet}) { 
        display: none;
     }
 `;
@@ -135,10 +135,12 @@ export const ButtonBottom = styled.button`
    display: none;
     @media (${({ theme }) => theme.device.laptopL}) { 
         padding: 14px 40px;
-        display: block;
     }
     @media (${({ theme }) => theme.device.laptop}) { 
        padding: 12px 35px;
+    }
+    @media (${({ theme }) => theme.device.tablet}) { 
+       display: block;
     }
     @media (${({ theme }) => theme.device.mobileL}) { 
        width: 100%;

@@ -4,6 +4,7 @@ export const Div = styled.div`
   background: #191b1d;
   padding: 25px 0;
   width: 100%;
+  height: max-content;
     @media (${({ theme }) => theme.device.laptop}) { 
       padding: 20px 0;
     }
