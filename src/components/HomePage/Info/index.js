@@ -6,7 +6,9 @@ import {
   BoxTitle,
   Title,
   Desc,
+  // eslint-disable-next-line no-unused-vars
   Button,
+  // eslint-disable-next-line no-unused-vars
   ButtonBottom,
   Wrapper,
 } from './styles';
@@ -22,10 +24,10 @@ const Info = () => (
           <BoxTitle>COMPANY</BoxTitle>
           <Title>Our Partners</Title>
           <Desc>Ranking and detailed reviews of the best products and services</Desc>
-          <Button>See All Partners</Button>
+          {/* <Button>See All Partners</Button> */}
         </Details>
         <Img src={PartnerImg} alt="" />
-        <ButtonBottom>See All Partners</ButtonBottom>
+        {/* <ButtonBottom>See All Partners</ButtonBottom> */}
       </Box>
     </Container>
     <Container costumeStyles={containerStyles}>
@@ -37,10 +39,10 @@ const Info = () => (
             Here at CARLOANS.com we pride ourselves on professional service.
             Our experts compare thousands of offers across the internet to find the best deals.
           </Desc>
-          <Button>Read More</Button>
+          {/* <Button>Read More</Button> */}
         </Details>
         <Img src={AboutUsImg} alt="" />
-        <ButtonBottom>See All Partners</ButtonBottom>
+        {/* <ButtonBottom>See All Partners</ButtonBottom> */}
       </Box>
     </Container>
   </Wrapper>

@@ -1,6 +1,7 @@
 import HomePage from '../pages/homePage';
 import ContactPage from '../pages/contactPage';
 import ProductsPage from '../pages/productsPage';
+import ServicePage from '../pages/servicePage';
 
 export const routes = [
   {
@@ -23,6 +24,11 @@ export const routes = [
     name: 'Contact',
     component: ContactPage,
     path: '/contact',
+  },
+  {
+    name: 'Service Page',
+    component: ServicePage,
+    path: '/service',
   },
 ];
 
