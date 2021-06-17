@@ -103,7 +103,7 @@ export const Li = styled.li`
 export const Form = styled.form`
   background-color: #E8ECF0;
   border-radius: 10px;
-  padding: 50px 130px 40px 130px;
+  padding: 50px 80px 40px 80px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -128,6 +128,9 @@ export const FormTitle = styled.h1`
     font-size: max(30px, 2.1vw);
     text-align: center;
     color: #191b1d;
+    @media (min-width: 1901px) { 
+      font-size: 36px;
+    }
     @media (${({ theme }) => theme.device.laptopL}) { 
       font-size: 28px;
     }
@@ -142,7 +145,7 @@ export const FormTitle = styled.h1`
     }
     @media (${({ theme }) => theme.device.mobileL}) { 
         font-size: 16px;
-    }
+   }
 `;
 
 export const InputWrapper = styled.div`
