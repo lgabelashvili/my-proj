@@ -3,7 +3,7 @@ import CarIcon from '../../../assets/images/car.svg';
 
 export const Div = styled.div`
     background-color: #f9fafb;
-    padding: 80px 0;
+    padding: 80px 0 80px;
 `;
 
 export const containerStyles = css``;
