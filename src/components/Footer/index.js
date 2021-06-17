@@ -18,6 +18,7 @@ const Footer = () => (
           <NavItem key={Math.random()}><Link to={route.path}>{route.name}</Link></NavItem>
           )
         ))}
+        <NavItem><Link to="/terms">Terms & Condtions</Link></NavItem>
       </NavList>
       <AllRightReserved>© 2021. All Rights Reserved.</AllRightReserved>
     </Container>

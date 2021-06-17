@@ -2,6 +2,7 @@ import HomePage from '../pages/homePage';
 import ContactPage from '../pages/contactPage';
 import ProductsPage from '../pages/productsPage';
 import ServicePage from '../pages/servicePage';
+import Rules from '../components/Rules';
 
 export const routes = [
   {
@@ -29,6 +30,12 @@ export const routes = [
     name: 'Service Page',
     component: ServicePage,
     path: '/service',
+    isHiddenMenu: true,
+  },
+  {
+    name: 'Rules',
+    component: Rules,
+    path: '/terms',
     isHiddenMenu: true,
   },
 ];

@@ -28,12 +28,14 @@ export const containerStyles = css`
 export const NavList = styled.ul`
   display: flex;
   align-items: center;
-  gap: 35px;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 15px;
    @media (${({ theme }) => theme.device.laptopL}) { 
-     gap: 30px;
+     gap: 10px 30px;
    }
     @media (${({ theme }) => theme.device.laptop}) { 
-      gap: 25px;
+      gap: 8px 25px;
     }
 `;
 
