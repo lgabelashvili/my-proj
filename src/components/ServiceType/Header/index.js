@@ -34,7 +34,7 @@ import AllStateLogo from '../../../assets/images/alistataLogo.png';
 import NoImg from '../../../assets/images/noImg.png';
 
 const Header = () => {
-  const [step, setStep] = useState(3);
+  const [step, setStep] = useState(1);
   const carList = [
     {
       title: 'I want a Car',
