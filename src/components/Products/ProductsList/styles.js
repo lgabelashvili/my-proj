@@ -14,6 +14,15 @@ export const Title = styled.h1`
     font-size: 40px;
     color: #191b1d;
     padding: 50px 0 6px;
+    @media (${({ theme }) => theme.device.laptopL}) { 
+      font-size: 36px;
+    }
+    @media (${({ theme }) => theme.device.laptop}) { 
+      font-size: 30px;
+    }
+   @media (${({ theme }) => theme.device.tablet}) { 
+     font-size: 26px;
+   }
 `;
 
 export const PageDesc = styled.p`
@@ -21,12 +30,25 @@ export const PageDesc = styled.p`
     font-size: 20px;
     text-align: left;
     color: #73879b;
+    @media (${({ theme }) => theme.device.laptopL}) { 
+      font-size: 18px;
+    }
+    @media (${({ theme }) => theme.device.laptop}) { 
+      font-size: 17px;
+    }
+   @media (${({ theme }) => theme.device.tablet}) { 
+     font-size: 15px;
+   }
 `;
 
 export const List = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   grid-gap: 30px;
+  padding: 50px 0 70px;
+   @media (${({ theme }) => theme.device.mobileL}) { 
+      grid-template-columns: 1fr;
+  }
 `;
 
 export const ListBox = styled.div`
@@ -35,6 +57,9 @@ export const ListBox = styled.div`
   width: 100%;
   border-radius: 10px;
   background: #e5e9ee;
+  max-width: 400px;
+  margin: auto;
+  height: 100%;
 `;
 
 export const Header = styled.div`
@@ -46,8 +71,16 @@ export const Header = styled.div`
   align-items: center;
   margin-bottom: 10px;
 `;
-
 export const HeaderImg = styled.img`
+  @media (${({ theme }) => theme.device.laptopL}) { 
+      width: 170px;
+  }
+   @media (${({ theme }) => theme.device.tablet}) { 
+      width: 150px;
+  }
+  @media (${({ theme }) => theme.device.mobileL}) { 
+     width: 130px;
+  }
 `;
 
 export const Ul = styled.ul`
@@ -93,9 +126,21 @@ export const Button = styled.button`
     font-size: 18px;
     cursor: pointer;
     border: 0;
-      &:focus {
-        outline: none;
-      }
+    &:focus {
+       outline: none;
+    }
+   @media (max-width: 1550px) {
+    font-size: 16px;
+    padding: 18px;
+  }
+   @media (${({ theme }) => theme.device.tablet}) { 
+      padding: 10px;
+      font-size: 16px;
+  }
+   @media (${({ theme }) => theme.device.tablet}) { 
+      padding: 8px;
+      font-size: 14px;
+  }
 `;
 
 export const Score = styled.p`
@@ -107,6 +152,15 @@ export const Score = styled.p`
       color: #9eaebd;
       font-size: 0.8em;
     }
+      @media (${({ theme }) => theme.device.laptopL}) { 
+          font-size: 26px;
+      }
+      @media (${({ theme }) => theme.device.laptop}) { 
+          font-size: 22px;
+      }
+      @media (${({ theme }) => theme.device.tablet}) { 
+         font-size: 18px;
+      }
 `;
 
 export const FooterLink = styled.a`
@@ -117,4 +171,14 @@ export const FooterLink = styled.a`
     display: block;
     text-decoration: underline;
     cursor: pointer;
+      @media (${({ theme }) => theme.device.laptopL}) { 
+        font-size: 17px;
+      }
+      @media (${({ theme }) => theme.device.laptop}) { 
+          font-size: 16px;
+      }
+      @media (${({ theme }) => theme.device.tablet}) { 
+         font-size: 15px;
+      }
+
 `;

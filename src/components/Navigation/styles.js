@@ -9,6 +9,7 @@ export const NavComponent = styled.div`
     top: 0;
     height: 95px;
     z-index: 999999;
+      background-color: #FFFFFF;
     @media (${({ theme }) => theme.device.laptopL}) { 
        height: 80px;
     }
