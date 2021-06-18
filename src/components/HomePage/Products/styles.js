@@ -160,5 +160,8 @@ export const Box = styled.div`
    &:hover ${LearnMore} {
       background-color: #fac04c;
       color: white;
+  };
+  @media (${({ theme }) => theme.device.laptop}) { 
+     max-width: 300px;
   }
 `;

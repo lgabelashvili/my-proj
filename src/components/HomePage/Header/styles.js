@@ -26,23 +26,23 @@ export const containerStyles = css`
    }
 `;
 
-export const Description = styled.div``;
+export const Description = styled.div`
+  margin-right: 50px;
+`;
 
 export const Title = styled.h1`
     font-family: "Sofia-Bold";
     font-size: max(50px, 3.1vw);
     color: #191b1d;
     margin-bottom: 41px;
-    @media (${({ theme }) => theme.device.laptopL}) { 
-      font-size: 42px;
-      margin-bottom: 30px;
+    @media (${({ theme }) => theme.device.laptopM}) { 
+        font-size: max(24px, 2.2vw);
+        margin-bottom: 30px;
     }
     @media (${({ theme }) => theme.device.laptop}) { 
-      font-size: max(27px, 3.8vw);
       margin-bottom: 10px;
     }
     @media (max-width: 1200px) { 
-      font-size: max(19px, 2.8vw);
       margin-bottom: 10px;
       margin-top: 30px;
     }
@@ -56,14 +56,10 @@ export const Info = styled.p`
   @media (${({ theme }) => theme.device.laptopL}) { 
       font-size: 22px;
   }
-   @media (max-width: 1200px) { 
-      font-size: max(18px, 1.8vw);
-      width: 80%;
-   }
-    @media (${({ theme }) => theme.device.tablet}) { 
+  @media (max-width: 1200px) { 
+      font-size: max(18px , 1.8vw);
       width: 100%;
-      font-size: max(16px, 2.8vw);
-    }
+   }
 `;
 
 export const Img = styled.img`

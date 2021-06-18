@@ -27,7 +27,7 @@ export const Box = styled.div`
   margin: ${({ reversed }) => (!reversed && 'auto')};
   grid-gap: 50px;
   @media (${({ theme }) => theme.device.laptopL}) { 
-      grid-template-columns: ${({ reversed }) => (reversed ? '1.2fr 1fr' : '1fr 1.2fr')} ;
+      grid-template-columns: ${({ reversed }) => (reversed ? '1fr 1.3fr' : '1.3fr 1fr')} ;
   }
   @media (max-width: 800px) { 
      grid-template-columns: 1fr;
@@ -39,8 +39,12 @@ export const Box = styled.div`
 
 export const Details = styled.div`
   order: ${({ reversed }) => reversed && 1};
+   @media (${({ theme }) => theme.device.laptopL}) { 
+      padding-left: ${({ reversed }) => !reversed && '6vw'};;   
+   }
    @media (${({ theme }) => theme.device.tablet}) { 
-   order: ${({ reversed }) => reversed && 0};
+     order: ${({ reversed }) => reversed && 0};
+    padding-left: ${({ reversed }) => !reversed && '0px'};;  
   }
 `;
 
@@ -51,8 +55,13 @@ export const Img = styled.img`
   @media (${({ theme }) => theme.device.laptopL}) { 
       max-height: 330px;
   }
-  @media (${({ theme }) => theme.device.tablet}) { 
+   @media (${({ theme }) => theme.device.laptop}) { 
       max-height: 300px;
+  }
+  @media (${({ theme }) => theme.device.tablet}) { 
+      max-height: 260px;
+      max-width: 400px;
+      margin: auto;
   }
 `;
 
