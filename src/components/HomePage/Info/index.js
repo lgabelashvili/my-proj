@@ -32,7 +32,7 @@ const Info = () => (
     </Container>
     <Container costumeStyles={containerStyles}>
       <Box reversed>
-        <Details>
+        <Details reversed>
           <BoxTitle>ABOUT US</BoxTitle>
           <Title>Who We Are</Title>
           <Desc>

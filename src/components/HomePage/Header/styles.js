@@ -41,8 +41,8 @@ export const Title = styled.h1`
       font-size: max(27px, 3.8vw);
       margin-bottom: 10px;
     }
-    @media (${({ theme }) => theme.device.laptop}) { 
-      font-size: max(23px, 3.8vw);
+    @media (max-width: 1200px) { 
+      font-size: max(19px, 2.8vw);
       margin-bottom: 10px;
       margin-top: 30px;
     }
@@ -56,14 +56,13 @@ export const Info = styled.p`
   @media (${({ theme }) => theme.device.laptopL}) { 
       font-size: 22px;
   }
-   @media (${({ theme }) => theme.device.laptop}) { 
-      font-size: 18px;
-      font-size: max(18px, 2vw);
+   @media (max-width: 1200px) { 
+      font-size: max(18px, 1.8vw);
       width: 80%;
    }
     @media (${({ theme }) => theme.device.tablet}) { 
       width: 100%;
-      font-size: max(15px, 2.8vw);
+      font-size: max(16px, 2.8vw);
     }
 `;
 

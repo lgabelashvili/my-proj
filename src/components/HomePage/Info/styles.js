@@ -19,43 +19,40 @@ export const containerStyles = css`
 `;
 
 export const Box = styled.div`
-  display: flex;
-  flex-direction: ${({ reversed }) => (reversed ? 'row-reverse' : 'row')};
+  display: grid;
+  grid-template-columns: ${({ reversed }) => (reversed ? '1fr 1.2fr' : '1.2fr 1fr')} ;
   max-width: 1260px;
   align-items: center;
   cursor: context-menu;
   margin: ${({ reversed }) => (!reversed && 'auto')};
-  gap: 100px;
+  grid-gap: 50px;
   @media (${({ theme }) => theme.device.laptopL}) { 
-    gap: 80px;
+      grid-template-columns: ${({ reversed }) => (reversed ? '1.2fr 1fr' : '1fr 1.2fr')} ;
   }
-  @media (${({ theme }) => theme.device.laptop}) { 
-     gap: 70px;
+  @media (max-width: 800px) { 
+     grid-template-columns: 1fr;
   }
   @media (${({ theme }) => theme.device.tablet}) { 
-   flex-direction: column;
-   max-width: 400px;
-   margin: auto;
-   gap: 0;
+      grid-gap: 20px;   
   }
 `;
 
 export const Details = styled.div`
-   flex: 1 1 0;
-   width: 0;
+  order: ${({ reversed }) => reversed && 1};
    @media (${({ theme }) => theme.device.tablet}) { 
-    flex: 0;
-    width: 100%;
+   order: ${({ reversed }) => reversed && 0};
   }
 `;
 
 export const Img = styled.img`
-   flex: 1 1 0;
-   width: 0;
-   height: 100%;
-   @media (${({ theme }) => theme.device.tablet}) { 
-    flex: 0;
-    width: 100%;
+  max-height: 500px;
+  height: 100%;
+  width: 100%;
+  @media (${({ theme }) => theme.device.laptopL}) { 
+      max-height: 330px;
+  }
+  @media (${({ theme }) => theme.device.tablet}) { 
+      max-height: 300px;
   }
 `;
 
@@ -78,7 +75,7 @@ export const Title = styled.h1`
       margin: 20px 0;
     }
     @media (${({ theme }) => theme.device.laptop}) { 
-      font-size: 28px;
+      font-size: 22px;
       margin: 17px 0;
     }
     @media (${({ theme }) => theme.device.mobileL}) { 

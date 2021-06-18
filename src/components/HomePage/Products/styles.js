@@ -5,6 +5,9 @@ export const Div = styled.div`
   background-color: #246BA3;
   background-image: url(${BgImg});
   padding: 40px 0;
+  background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 `;
 
 export const containerStyles = css`
@@ -135,7 +138,6 @@ export const Box = styled.div`
   max-width: 364px;
   max-height: 300px;
   width: 100%;
-  height: 100%;
   border-radius: 20px;
   box-shadow: 20px 20px 16px rgba(0, 0, 0, 0.03);
   display: flex;

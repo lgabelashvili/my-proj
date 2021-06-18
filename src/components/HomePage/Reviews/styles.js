@@ -26,19 +26,20 @@ export const containerStyles = css`
 `;
 
 export const Box = styled.div`
-    display: flex;
-   gap: 20px;
+   display: grid;
+   grid-template-columns: repeat(3, minmax(0, max-content));
+   justify-items: center;
+   grid-gap: 20px;
    text-align: left;
    @media (${({ theme }) => theme.device.tablet}) { 
-     flex-direction: column;
+     grid-template-columns: repeat(1, minmax(0, max-content));
      justify-content: center;
      align-items: center;
      text-align: center;
-     gap: 0;
+     grid-gap: 0;
   };
   @media (max-width: 550px) { 
     align-items: flex-start;
-    text-align: left;
   };
 `;
 
