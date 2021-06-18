@@ -61,17 +61,16 @@ export const SubTitle = styled.p`
 export const Ul = styled.ul`
   margin-top: 50px;
   padding-left: 20px;
-  display: flex;
-  gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(max-content, 0));
   flex-wrap: wrap;
+  gap: 100px;
   @media (${({ theme }) => theme.device.laptopL}) { 
-      gap: 90px;
-  }
-  @media (${({ theme }) => theme.device.laptop}) { 
-      gap: 75px;
+      grid-template-columns: repeat(2, minmax(max-content, 0));
+      gap: 10px 20px;
   }
   @media (${({ theme }) => theme.device.tablet}) { 
-      gap: 15px 60px;
+      grid-template-columns: 1fr;
   }
 `;
 
@@ -105,9 +104,9 @@ export const Form = styled.form`
   border-radius: 10px;
   padding: 50px 80px 40px 80px;
   margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 20px;
   margin-bottom: 50px;
   @media (${({ theme }) => theme.device.laptopL}) { 
       padding: 40px 120px 30px 120px;
@@ -149,9 +148,10 @@ export const FormTitle = styled.h1`
 `;
 
 export const InputWrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  gap: 20px;
+  grid-gap: 20px;
   margin-top: 50px;
   @media (${({ theme }) => theme.device.laptopL}) { 
      margin-top: 40px;
@@ -161,12 +161,12 @@ export const InputWrapper = styled.div`
   }
   @media (${({ theme }) => theme.device.tablet}) { 
        margin-top: 25px;
-       flex-direction: column;
+       grid-template-columns: 1fr;
   }
 `;
 
 export const Input = styled.input`
-  width: 50%;
+  width: 100%;
   background: #fff;
   border: 2px solid #ecefef;
   padding: 20px;

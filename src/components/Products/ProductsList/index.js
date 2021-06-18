@@ -58,6 +58,7 @@ const ProductsList = () => {
               </Footer>
             </ListBox>
           ))}
+
         </List>
       </Container>
     </Box>
