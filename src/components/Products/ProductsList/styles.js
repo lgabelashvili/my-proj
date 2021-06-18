@@ -43,13 +43,18 @@ export const PageDesc = styled.p`
 
 export const List = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
   padding: 50px 0 70px;
-  & div:nth-child(2n+1) {
-        justify-self: end;
+  justify-items: center;
+  justify-content: center;
+   @media (max-width: 1850px) { 
+      grid-template-columns: repeat(3, minmax(max-content,0));
   }
-   @media (${({ theme }) => theme.device.mobileL}) { 
+  @media (max-width: 800px) { 
+      grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 700px) { 
       grid-template-columns: 1fr;
   }
 `;
@@ -60,7 +65,7 @@ export const ListBox = styled.div`
   width: 100%;
   border-radius: 10px;
   background: #e5e9ee;
-  max-width: 400px;
+  max-width: 360px;
   height: 100%;
      @media (${({ theme }) => theme.device.tablet}) { 
       margin: auto;
