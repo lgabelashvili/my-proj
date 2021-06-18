@@ -91,21 +91,6 @@ export const Logo = styled.img`
   }
 `;
 
-export const NavList = styled.ul`
-  display: flex;
-  gap: 44px;
-  padding: 0 20px;
-   @media ${({ theme }) => theme.device.laptop} { 
-      gap: 30px;
-  }
-  @media (${({ theme }) => theme.device.tablet}) { 
-    gap: 30px;
-  }
-   @media (${({ theme }) => theme.device.mobileL}) { 
-    gap: 20px;
-  }
-`;
-
 export const NavItem = styled.li`
   list-style-type: none;
   cursor: pointer;
@@ -119,6 +104,29 @@ export const NavItem = styled.li`
   }
     @media (${({ theme }) => theme.device.mobileL}) { 
     font-size: 13px;
+  }
+`;
+
+export const NavList = styled.ul`
+  display: flex;
+  padding: 0 20px;
+  & ${NavItem}:not(:last-child){
+    margin-right: 44px;
+  }
+   @media ${({ theme }) => theme.device.laptop} { 
+      & ${NavItem}:not(:last-child){
+        margin-right: 30px;
+      }
+    }
+  @media (${({ theme }) => theme.device.tablet}) { 
+      & ${NavItem}:not(:last-child){
+        margin-right: 26px;
+      }
+  }
+   @media (${({ theme }) => theme.device.mobileL}) { 
+      & ${NavItem}:not(:last-child){
+        margin-right: 22px;
+      }
   }
 `;
 

@@ -46,6 +46,9 @@ export const List = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   grid-gap: 30px;
   padding: 50px 0 70px;
+  & div:nth-child(2n+1) {
+        justify-self: end;
+  }
    @media (${({ theme }) => theme.device.mobileL}) { 
       grid-template-columns: 1fr;
   }

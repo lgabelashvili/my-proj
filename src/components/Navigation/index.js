@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useLayoutEffect, useState } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 import {
   Nav,
   containerStyles,
@@ -20,6 +20,10 @@ import CancelIcon from '../../assets/images/cancel.svg';
 export const Navigation = () => {
   const [isOpen, setOpen] = useState(false);
   const history = useHistory();
+  const { pathname } = useLocation();
+  useLayoutEffect(() => {
+    setOpen(false);
+  }, [pathname]);
   return (
     <NavComponent>
       <Container costumeStyles={containerStyles}>

@@ -25,25 +25,12 @@ export const containerStyles = css`
   
 `;
 
-export const NavList = styled.ul`
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 15px;
-   @media (${({ theme }) => theme.device.laptopL}) { 
-     gap: 10px 30px;
-   }
-    @media (${({ theme }) => theme.device.laptop}) { 
-      gap: 8px 25px;
-    }
-`;
-
 export const NavItem = styled.li`
   color: white;
   list-style-type: none;
   cursor: pointer;
   font-family: Sofia-Bold;
+  margin-bottom: 5px;
   & a {
     text-decoration: none;
     font-size: 18px;
@@ -55,6 +42,21 @@ export const NavItem = styled.li`
       font-size: 14px;
     }
   }
+`;
+
+export const NavList = styled.ul`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  & ${NavItem}:not(:last-child){
+      margin-right: 30px;
+  }
+   @media (${({ theme }) => theme.device.laptopL}) { 
+      margin-right: 26px;
+   }
+    @media (${({ theme }) => theme.device.laptop}) { 
+      margin-right: 20px;
+    }
 `;
 
 export const AllRightReserved = styled.p`
