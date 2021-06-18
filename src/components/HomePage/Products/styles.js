@@ -78,12 +78,14 @@ export const CategoryList = styled.div`
         justify-self: flex-end;
     }
     @media (${({ theme }) => theme.device.tablet}) { 
-      grid-template-columns: repeat(1, 1fr);
       justify-content: center;
       margin-top: 50px;
+    }
+     @media (max-width: 500px) { 
+       grid-template-columns: repeat(1, 1fr);
        & div:nth-child(n){
         justify-self: center;
-    }
+     }
     }
   }
 `;
