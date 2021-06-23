@@ -3,46 +3,35 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useLocation,
+  Redirect,
 } from 'react-router-dom';
-import { useLayoutEffect } from 'react';
-import routes from '../../helpers/routes';
 import { Div } from './styles';
+import routes from '../../helpers/routes';
 import theme from '../../helpers/themes';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import './styles.css';
 
-const RouteComp = () => {
-  const { pathname } = useLocation();
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return (
-    <>
-      {routes.map((route) => (
-        <Route
-          exact={route.path === '/'}
-          path={route.path}
-          key={route.name}
-          component={route.component}
-        />
-      ))}
-    </>
-  );
-};
-
 const App = () => (
   <ThemeProvider theme={theme}>
-    <Div>
-      <Router>
+    <Router>
+      <Div>
         <Navigation />
         <Switch>
-          <RouteComp />
+          {routes.map((route) => (
+            <Route
+              exact={route.path === '/'}
+              path={route.path}
+              key={route.name}
+            >
+              {route.component}
+            </Route>
+          ))}
+          <Redirect path="*" to="/" />
         </Switch>
         <Footer />
-      </Router>
-    </Div>
+      </Div>
+    </Router>
   </ThemeProvider>
 );
 
