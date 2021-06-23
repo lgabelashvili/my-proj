@@ -37,7 +37,7 @@ export const BoxTitle = styled.h3`
     font-size: 16px;
     color: #191b1d;
     margin-bottom: 13px;
-  @media (${({ theme }) => theme.device.laptopL}) { 
+  @media (${({ theme }) => theme.device.laptop}) { 
       font-size: 15px;
    } 
  
@@ -49,11 +49,8 @@ export const Desc = styled.p`
     color: #54616c;
     margin-bottom: 24px;
       @media (${({ theme }) => theme.device.laptopL}) { 
-      font-size: 22px;
+      font-size: 18px;
    } 
-  @media (${({ theme }) => theme.device.laptop}) { 
-      font-size: 20px;
-   }      
  @media (${({ theme }) => theme.device.tablet}) { 
       font-size: 16px;
   }   

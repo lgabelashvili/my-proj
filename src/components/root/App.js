@@ -9,9 +9,9 @@ import { useLayoutEffect } from 'react';
 import routes from '../../helpers/routes';
 import { Div } from './styles';
 import theme from '../../helpers/themes';
-import FontStyles from '../../helpers/fontStyles';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
+import './styles.css';
 
 const RouteComp = () => {
   const { pathname } = useLocation();
@@ -34,7 +34,6 @@ const RouteComp = () => {
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <FontStyles />
     <Div>
       <Router>
         <Navigation />

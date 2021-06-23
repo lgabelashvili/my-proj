@@ -1,0 +1,102 @@
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Sofia-Black;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Black'),     
+    url('../../assets/fonts/Sofia\ Pro\ Black\ Az.woff') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ Black\ Az.woff2') format('woff')
+}
+
+@font-face {
+    font-family: Sofia-Black-Italic;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Black-Italic'),     
+    url('../../assets/fonts/Sofia\ Pro\ Black\ Italic\ Az.woff2') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ Black\ Italic\ Az.woff') format('woff')
+}
+
+@font-face {
+    font-family: Sofia-Bold;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Bold'),     
+    url('../../assets/fonts/Sofia\ Pro\ Bold\ Az.woff2') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ Bold\ Az.woff') format('woff')
+}
+
+@font-face {
+    font-family: Sofia-Bold-Italic;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Bold-Italic'),     
+    url('../../assets/fonts/Sofia\ Pro\ Bold\ Italic\ Az.woff2') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ Bold\ Italic\ Az.woff') format('woff')
+}
+
+@font-face {
+    font-family: Sofia-Extra-Light;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Extra-Light'),     
+    url('../../assets/fonts/Sofia\ Pro\ ExtraLight\ Az.woff2') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ ExtraLight\ Az.woff') format('woff')
+}
+
+@font-face {
+    font-family: Sofia-Extra-Light-Italic;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Extra-Light-Italic'),     
+    url('../../assets/fonts/Sofia\ Pro\ ExtraLight\ Italic\ Az.woff2') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ ExtraLight\ Italic\ Az.woff') format('woff')
+}
+
+@font-face {
+    font-family: Sofia-Light;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Light'),     
+    url('../../assets/fonts/Sofia\ Pro\ Light\ Az.woff2') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ Light\ Az.woff') format('woff')
+}
+
+@font-face {
+    font-family: Sofia-Light-Italic;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Light-Italic'),     
+    url('../../assets/fonts/Sofia\ Pro\ Light\ Italic\ Az.woff2') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ Light\ Italic\ Az.woff2') format('woff')
+}
+
+@font-face {
+    font-family: Sofia-Medium;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Medium'),     
+    url('../../assets/fonts/Sofia\ Pro\ Medium\ Az.woff2') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ Medium\ Az.woff') format('woff')
+}
+
+@font-face {
+    font-family: Sofia-Medium-Italic;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Medium'),     
+    url('../../assets/fonts/Sofia\ Pro\ Medium\ Italic\ Az.woff2') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ Medium\ Italic\ Az.woff') format('woff')
+}
+
+@font-face {
+    font-family: Sofia-Semi-Bold;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Semi-Bold;'),     
+    url('../../assets/fonts/Sofia\ Pro\ Semi\ Bold\ Az.woff2') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ Semi\ Bold\ Az.woff') format('woff')
+}
+
+@font-face {
+    font-family: Sofia-Semi-Bold-Italic;
+    font-display: swap; /* Read next point */
+    src: local('Sofia-Semi-Bold-Italic'),     
+    url('../../assets/fonts/Sofia\ Pro\ Semi\ Bold\ Italic\ Az.woff2') format('woff2'),    
+    url('../../assets/fonts/Sofia\ Pro\ Semi\ Bold\ Italic\ Az.woff') format('woff')
+}
