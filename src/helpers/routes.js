@@ -18,7 +18,7 @@ export const routes = [
   },
   {
     name: 'About Us',
-    component: ContactPage,
+    component: Rules,
     path: '/about',
   },
   {
