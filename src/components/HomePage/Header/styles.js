@@ -28,6 +28,9 @@ export const containerStyles = css`
 
 export const Description = styled.div`
   margin-right: 50px;
+  @media (${({ theme }) => theme.device.tablet}) { 
+    margin-right: 0;
+   }
 `;
 
 export const Title = styled.h1`
