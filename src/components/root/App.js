@@ -12,6 +12,7 @@ import theme from '../../helpers/themes';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import './styles.css';
+import HomePage from '../../pages/homePage';
 
 const RouteComp = () => {
   const { pathname } = useLocation();
@@ -28,6 +29,7 @@ const RouteComp = () => {
           component={route.component}
         />
       ))}
+      <Route path="*"><HomePage /></Route>
     </>
   );
 };
