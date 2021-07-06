@@ -32,6 +32,7 @@ const data = {
         'Approvals Absolutely FREE & Confidential',
       ],
       url: 'https://redirect-3.net/d/37627',
+      score: '8/10',
     },
     {
       id: 2,
@@ -44,6 +45,7 @@ const data = {
         'Nationwide network of dealerships and lenders',
       ],
       url: 'https://redirect-3.net/d/52083',
+      score: '9/10',
     },
     {
       id: 3,
@@ -56,6 +58,7 @@ const data = {
         'Save Money',
       ],
       url: 'https://redirect-3.net/d/60912',
+      score: '8/10',
     },
   ],
   personalFinance: [
@@ -69,6 +72,7 @@ const data = {
         'Nationwide Network of Lenders',
       ],
       url: 'https://redirect-3.net/d/17862',
+      score: '9/10',
     },
   ],
 };
@@ -77,7 +81,6 @@ const ProductsList = () => {
   const { productsName } = useParams();
   const history = useHistory();
   const location = useLocation();
-  console.log(productsName, 111);
   const handleUrlChange = (url) => {
     window.location.replace(url);
   };
@@ -117,8 +120,11 @@ const ProductsList = () => {
                   Visit Website
                 </Button>
                 <Score>
-                  9.7
-                  <span>/10</span>
+                  {item.score.split('/')[0]}
+                  <span>
+                    /
+                    {item.score.split('/')[1]}
+                  </span>
                   <FooterLink onClick={() => history.push(`${location.pathname}/${item.id}`)}>Read Review</FooterLink>
                 </Score>
               </Footer>
