@@ -116,7 +116,10 @@ const Header = () => {
         <FinalStep>
           <FinalStepBox>
             <FinalStepLogo src={require(`../../../assets/images/${currentData?.logo}`).default} />
-            <FinalStepDesc>Get your quote today from Allstate Car Loan company.</FinalStepDesc>
+            <FinalStepDesc>
+              Get your quote today from Bluesky Auto Finance
+              (Carloans Canada, Carsfast LendingArch) company.
+            </FinalStepDesc>
             <Button
               onClick={() => {
                 window.open(currentData?.contact?.quoteUrl, '_blank').focus();
@@ -125,8 +128,8 @@ const Header = () => {
               Get Quote Now
             </Button>
             <FooterText>
-              Just click, fill in the form and one of our
-              specialists will call you with customized auto loan options.
+              Just click, Get Quote Now and one of our specialists
+              will call you with customized auto loan
             </FooterText>
           </FinalStepBox>
           <FinalStepImg src={require(`../../../assets/images/${currentData?.cover}`).default} />
