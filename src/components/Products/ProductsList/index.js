@@ -1,4 +1,6 @@
-import { useHistory, useLocation } from 'react-router-dom';
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
+import { useHistory, useLocation, useParams } from 'react-router-dom';
 import {
   Box,
   containerStyles,
@@ -16,14 +18,65 @@ import {
   FooterLink,
 } from './styles';
 import Container from '../../Container';
-import alistataLogo from '../../../assets/images/alistataLogo.png';
+
+const data = {
+  autoLoans: [
+    {
+      id: 1,
+      name: 'blue-sky',
+      logo: 'blueSkyLogo',
+      details: [
+        'Good, Bad or No Credit Accepted',
+        '400+ Lenders Compete for Your Business ',
+        'Same Day Car Financing ',
+        'Approvals Absolutely FREE & Confidential',
+      ],
+      url: 'https://redirect-3.net/d/37627',
+    },
+    {
+      id: 2,
+      name: 'carloans',
+      logo: 'carLoansLogo',
+      details: [
+        'Get a quote free of charge',
+        'Fast-track fully online service',
+        'All credit scores accepted',
+        'Nationwide network of dealerships and lenders',
+      ],
+      url: 'https://redirect-3.net/d/52083',
+    },
+    {
+      id: 3,
+      name: 'cars-fast',
+      logo: 'carfastLogo',
+      details: [
+        'Get a quote free of charge',
+        'Better Rates',
+        'Low Payments',
+        'Save Money',
+      ],
+      url: 'https://redirect-3.net/d/60912',
+    },
+  ],
+};
 
 const ProductsList = () => {
+  const { productsName } = useParams();
   const history = useHistory();
   const location = useLocation();
-  console.log(location.pathname);
+  console.log(productsName, 111);
   const handleUrlChange = (url) => {
     window.location.replace(url);
+  };
+
+  const filteredData = () => {
+    switch (productsName) {
+      case 'auto-loans':
+        return data.autoLoans;
+      default:
+        break;
+    }
+    return null;
   };
   return (
     <Box>
@@ -34,31 +87,28 @@ const ProductsList = () => {
               types of credit issues - and we can help you!`}
         </PageDesc>
         <List>
-          {new Array(20).fill(1).map((el, index) => (
-            <ListBox key={el + Math.random()}>
+          {filteredData().map((item) => (
+            <ListBox key={item + Math.random()}>
               <Header>
-                <HeaderImg alt="" src={alistataLogo} />
+                <HeaderImg alt="" src={require(`../../../assets/images/${item.logo}.png`).default} />
               </Header>
               <Ul>
-                <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-                <Li>Special financing for Bad Credit</Li>
-                <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
-                <Li>Special financing for Bad Credit</Li>
-                <Li>Special financing for Bad Credit, No Credit and Bankruptcy</Li>
+                {item.details.map((detail) => (
+                  <Li>{detail}</Li>
+                ))}
               </Ul>
               <Footer>
-                <Button onClick={() => handleUrlChange('https://www.google.com')}>
+                <Button onClick={() => handleUrlChange(item.url)}>
                   Visit Website
                 </Button>
                 <Score>
                   9.7
                   <span>/10</span>
-                  <FooterLink onClick={() => history.push(`${location.pathname}/${index}`)}>Read Review</FooterLink>
+                  <FooterLink onClick={() => history.push(`${location.pathname}/${item.id}`)}>Read Review</FooterLink>
                 </Score>
               </Footer>
             </ListBox>
           ))}
-
         </List>
       </Container>
     </Box>

@@ -71,6 +71,7 @@ export const ListBox = styled.div`
   border-radius: 10px;
   background: #e5e9ee;
   max-width: 360px;
+  width: 100%;
   @media (max-width: 1250px) { 
       max-width: 320px;
   }

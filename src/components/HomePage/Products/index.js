@@ -28,7 +28,7 @@ const Products = () => {
               {`We’ve carefully reviewed all of our auto loan providers to find the very best for our customers. 
               All of the providers we’ve selected allow you to apply online and have fast approval times.`}
             </BoxDesc>
-            <LearnMore onClick={() => history.push('/product/test')}>Learn More</LearnMore>
+            <LearnMore onClick={() => history.push('/product/auto-loans')}>Learn More</LearnMore>
           </Box>
           <Box>
             <BoxTitle>Personal Finance</BoxTitle>
@@ -36,7 +36,7 @@ const Products = () => {
               All of the personal finance providers we’ve selected
               allow you to apply online and have fast approval times.
             </BoxDesc>
-            <LearnMore onClick={() => history.push('/product/test')}>Learn More</LearnMore>
+            <LearnMore onClick={() => history.push('/product/personal-finance')}>Learn More</LearnMore>
           </Box>
         </CategoryList>
       </Container>
