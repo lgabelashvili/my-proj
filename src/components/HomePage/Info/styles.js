@@ -50,18 +50,19 @@ export const Details = styled.div`
 
 export const Img = styled.img`
   max-height: 500px;
-  height: 100%;
+  height: 20vw;
   width: 100%;
   @media (${({ theme }) => theme.device.laptopL}) { 
-      max-height: 330px;
+      height: 23vw;
   }
    @media (${({ theme }) => theme.device.laptop}) { 
-      max-height: 300px;
+      height: 25vw;
   }
   @media (${({ theme }) => theme.device.tablet}) { 
       max-height: 260px;
       max-width: 400px;
       margin: auto;
+      height: 220px;
   }
 `;
 
