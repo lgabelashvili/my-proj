@@ -49,7 +49,7 @@ export const Details = styled.div`
 `;
 
 export const Img = styled.img`
-  max-height: 500px;
+  max-height: 450px;
   height: 20vw;
   width: 100%;
   @media (${({ theme }) => theme.device.laptopL}) { 
