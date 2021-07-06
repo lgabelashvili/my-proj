@@ -41,7 +41,6 @@ const ProductDetails = () => {
     }
     return null;
   };
-  console.log(filteredData());
   return (
     <Box>
       <Container costumeStyles={containerStyles}>

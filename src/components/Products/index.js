@@ -3,8 +3,7 @@ import ProductsList from './ProductsList';
 import ProductDetails from './ProductDetails';
 
 const Products = () => {
-  const { productsName, id } = useParams();
-  console.log(productsName, id);
+  const { id } = useParams();
   return (
     <>
       {id ? <ProductDetails /> : <ProductsList />}

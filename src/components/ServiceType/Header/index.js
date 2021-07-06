@@ -68,7 +68,6 @@ const Header = () => {
     },
   ];
   const currentData = companyInfo.autoLoans.filter((item) => item.id === id)[0];
-  console.log(currentData?.contact);
 
   return (
     <Div>
