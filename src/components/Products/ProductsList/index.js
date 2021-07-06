@@ -58,6 +58,19 @@ const data = {
       url: 'https://redirect-3.net/d/60912',
     },
   ],
+  personalFinance: [
+    {
+      id: 4,
+      name: 'blue-sky',
+      logo: 'blueSkyLogo',
+      details: [
+        'Financing When You Need It',
+        'Fairer Financing Without Confusion',
+        'Nationwide Network of Lenders',
+      ],
+      url: 'https://redirect-3.net/d/17862',
+    },
+  ],
 };
 
 const ProductsList = () => {
@@ -73,6 +86,8 @@ const ProductsList = () => {
     switch (productsName) {
       case 'auto-loans':
         return data.autoLoans;
+      case 'personal-finance':
+        return data.personalFinance;
       default:
         break;
     }
@@ -86,7 +101,7 @@ const ProductsList = () => {
           {`We've helped millions of people with all
               types of credit issues - and we can help you!`}
         </PageDesc>
-        <List>
+        <List cnt={filteredData().length}>
           {filteredData().map((item) => (
             <ListBox key={item + Math.random()}>
               <Header>

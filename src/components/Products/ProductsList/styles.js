@@ -46,7 +46,7 @@ export const List = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
   padding: 50px 0 70px;
-  justify-items: center;
+  justify-items: ${({ cnt }) => cnt > 1 && 'center'};
   justify-content: center;
    @media (max-width: 1850px) { 
    grid-template-columns: repeat(3, 1fr);
@@ -54,10 +54,10 @@ export const List = styled.div`
   @media (max-width: 1250px) { 
       grid-template-columns: 1fr 1fr;
       & > div:nth-child(2n+1){
-        justify-self: end;
+        justify-self: ${({ cnt }) => cnt > 1 && 'end'};
       }
       & > div:nth-child(2n){
-        justify-self: start;
+        justify-self: ${({ cnt }) => cnt > 1 && 'start'};
       }
   }
   @media (max-width: 700px) { 
