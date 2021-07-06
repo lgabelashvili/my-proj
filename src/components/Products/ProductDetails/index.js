@@ -32,10 +32,21 @@ const ProductDetails = () => {
 
   const filteredData = () => {
     switch (productsName) {
-      case 'auto-loans':
-        return companyInfo.autoLoans.filter((item) => item.id === id)[0];
+      case 'auto-loans': {
+        const data = companyInfo.autoLoans.filter((item) => item.id === id);
+        if (data.length === 0) {
+          history.replace('/');
+        }
+        return data[0];
+      }
       case 'personal-finance':
-        return companyInfo.personalFinance.filter((item) => item.id === id)[0];
+      {
+        const data = companyInfo.personalFinance.filter((item) => item.id === id);
+        if (data.length === 0) {
+          history.replace('/');
+        }
+        return data[0];
+      }
       default:
         break;
     }
@@ -49,14 +60,14 @@ const ProductDetails = () => {
             <BackImg alt="" src={BackIcon} />
             Back
           </Back>
-          <Img src={require(`../../../assets/images/${filteredData().cover}`).default} alt="" />
+          <Img src={filteredData() && require(`../../../assets/images/${filteredData()?.cover}`).default} alt="" />
           <LogoWrapper>
-            <Logo src={require(`../../../assets/images/${filteredData().logo}`).default} alt="" />
+            <Logo src={filteredData() && require(`../../../assets/images/${filteredData()?.logo}`).default} alt="" />
             <Button onClick={() => handleUrlChange(filteredData().url)}>Visit Website</Button>
           </LogoWrapper>
           <Detail>
             <DetailTitle>Highlights & Score</DetailTitle>
-            {filteredData().hS.map((item, index) => (
+            {filteredData() && filteredData().hS.map((item, index) => (
               <div key={Math.random()}>
                 {index === 0 && (
                 <DetailText showDot>
@@ -74,13 +85,13 @@ const ProductDetails = () => {
           <Detail>
             <DetailTitle>Benefits</DetailTitle>
             <DetailText>
-              {filteredData().benefits}
+              {filteredData()?.benefits}
             </DetailText>
           </Detail>
           <Detail>
             <DetailTitle>Reviews</DetailTitle>
             <DetailText>
-              {filteredData().overview}
+              {filteredData()?.overview}
             </DetailText>
           </Detail>
         </ContainerWrapper>
