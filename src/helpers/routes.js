@@ -29,7 +29,7 @@ export const routes = [
   {
     name: 'Service Page',
     component: ServicePage,
-    path: '/service',
+    path: '/service/:id',
     isHiddenMenu: true,
   },
   {

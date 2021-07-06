@@ -64,8 +64,8 @@ const data = {
   personalFinance: [
     {
       id: 4,
-      name: 'blue-sky',
-      logo: 'blueSkyLogo',
+      name: 'mana-loans',
+      logo: 'manaLoansLogo',
       details: [
         'Financing When You Need It',
         'Fairer Financing Without Confusion',
@@ -112,7 +112,7 @@ const ProductsList = () => {
               </Header>
               <Ul>
                 {item.details.map((detail) => (
-                  <Li>{detail}</Li>
+                  <Li key={Math.random()}>{detail}</Li>
                 ))}
               </Ul>
               <Footer>

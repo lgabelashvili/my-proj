@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import {
   Div,
   containerStyles,
@@ -32,9 +33,12 @@ import YesIcon from '../../../assets/images/yes.svg';
 import NoIcon from '../../../assets/images/no.svg';
 import AllStateLogo from '../../../assets/images/alistataLogo.png';
 import NoImg from '../../../assets/images/noImg.png';
+import { companyInfo } from '../../../helpers/companyInfo';
 
 const Header = () => {
   const [step, setStep] = useState(1);
+  const { id } = useParams();
+
   const carList = [
     {
       title: 'I want a Car',
@@ -63,6 +67,9 @@ const Header = () => {
       img: NoIcon,
     },
   ];
+  const currentData = companyInfo.autoLoans.filter((item) => item.id === id)[0];
+  console.log(currentData?.contact);
+
   return (
     <Div>
       <Container costumeStyles={containerStyles}>
@@ -111,7 +118,11 @@ const Header = () => {
           <FinalStepBox>
             <FinalStepLogo src={AllStateLogo} />
             <FinalStepDesc>Get your quote today from Allstate Car Loan company.</FinalStepDesc>
-            <Button>Get Quote Now</Button>
+            <Button
+              onClick={() => window.location.replace(currentData?.contact?.quoteUrl)}
+            >
+              Get Quote Now
+            </Button>
             <FooterText>
               Just click, fill in the form and one of our
               specialists will call you with customized auto loan options.

@@ -6,6 +6,12 @@ export const companyInfo = {
       logo: 'blueSkyLogo.png',
       cover: 'blueSkyCover.png',
       url: 'https://redirect-3.net/d/37627',
+      contact: {
+        quoteUrl: 'https://redirect-3.net/d/37627',
+        phone: '1-800-BLUE SKY',
+        email: 'customercare@blueskyautofinance.com',
+        address: '231 Market Place, Suite 747, San Ramon CA 94583',
+      },
       hS: [
         '8/10',
         'Good, Bad or No Credit Accepted',
@@ -29,6 +35,12 @@ export const companyInfo = {
       logo: 'carLoansLogo.png',
       cover: 'carLoansCover.png',
       url: 'https://redirect-3.net/d/52083',
+      contact: {
+        quoteUrl: 'https://redirect-3.net/d/52083',
+        phone: '1 (888) 536 4210',
+        email: 'info@carloanscanada.com +1 888 536-4210',
+        address: '10 Lower Spadina Ave, Toronto, ON',
+      },
       hS: [
         '9/10',
         'Get a quote free of charge',
@@ -43,9 +55,15 @@ export const companyInfo = {
     {
       id: '3',
       name: 'cars-fast',
-      logo: 'carsFastLogo.png',
+      logo: 'carfastLogo.png',
       cover: 'carsFastCover.png',
       url: 'https://redirect-3.net/d/60912',
+      contact: {
+        quoteUrl: 'https://redirect-3.net/d/60912',
+        phone: '1 (855) 610 1739',
+        email: 'hello@lendingarch.com ',
+        address: '3553 31 St NW, Calgary, AB T2L 2K7',
+      },
       hS: [
         '8/10',
         'Get a quote free of charge',
