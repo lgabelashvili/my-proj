@@ -57,7 +57,7 @@ const ProductDetails = () => {
           <Detail>
             <DetailTitle>Highlights & Score</DetailTitle>
             {filteredData().hS.map((item, index) => (
-              <>
+              <div key={Math.random()}>
                 {index === 0 && (
                 <DetailText showDot>
                   <Score>{item.split('/')[0]}</Score>
@@ -68,7 +68,7 @@ const ProductDetails = () => {
                 { index > 0 && (
                 <DetailText showDot>{item}</DetailText>
                 )}
-              </>
+              </div>
             ))}
           </Detail>
           <Detail>
