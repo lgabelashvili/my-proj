@@ -68,7 +68,6 @@ const Header = () => {
     },
   ];
   const currentData = companyInfo.autoLoans.filter((item) => item.id === id)[0];
-
   return (
     <Div>
       <Container costumeStyles={containerStyles}>
@@ -117,8 +116,11 @@ const Header = () => {
           <FinalStepBox>
             <FinalStepLogo src={require(`../../../assets/images/${currentData?.logo}`).default} />
             <FinalStepDesc>
-              Get your quote today from Bluesky Auto Finance
-              (Carloans Canada, Carsfast LendingArch) company.
+              Get your quote today from
+              {' '}
+              {currentData?.name}
+              {' '}
+              company.
             </FinalStepDesc>
             <Button
               onClick={() => {
