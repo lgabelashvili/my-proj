@@ -1,9 +1,9 @@
 import RulesComponent from '../../components/Rules';
 
-const HomePage = () => (
+const rulesPage = () => (
   <>
     <RulesComponent />
   </>
 );
 
-export default HomePage;
+export default rulesPage;

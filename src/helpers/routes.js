@@ -3,6 +3,7 @@ import ContactPage from '../pages/contactPage';
 import ProductsPage from '../pages/productsPage';
 import ServicePage from '../pages/servicePage';
 import Rules from '../pages/rulesPage';
+import About from '../pages/aboutPage';
 
 export const routes = [
   {
@@ -18,7 +19,7 @@ export const routes = [
   },
   {
     name: 'About Us',
-    component: Rules,
+    component: About,
     path: '/about',
   },
   {
