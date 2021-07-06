@@ -119,7 +119,7 @@ const Header = () => {
             <FinalStepDesc>Get your quote today from Allstate Car Loan company.</FinalStepDesc>
             <Button
               onClick={() => {
-                window.open(currentData?.contact?.quoteUrl, '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+                window.open(currentData?.contact?.quoteUrl, '_blank').focus();
               }}
             >
               Get Quote Now

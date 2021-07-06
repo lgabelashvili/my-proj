@@ -82,7 +82,7 @@ const ProductsList = () => {
   const history = useHistory();
   const location = useLocation();
   const handleUrlChange = (url) => {
-    window.open(url, '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+    window.open(url, '_blank').focus();
   };
 
   const filteredData = () => {
