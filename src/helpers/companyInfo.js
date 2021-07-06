@@ -2,7 +2,7 @@ export const companyInfo = {
   autoLoans: [
     {
       id: '1',
-      name: 'blue-sky',
+      name: 'Bluesky Auto Finance',
       logo: 'blueSkyLogo.png',
       cover: 'blueSkyCover.png',
       url: 'https://redirect-3.net/d/37627',
@@ -31,7 +31,7 @@ export const companyInfo = {
     },
     {
       id: '2',
-      name: 'carloans',
+      name: 'Carloans Canada',
       logo: 'carLoansLogo.png',
       cover: 'carLoansCover.png',
       url: 'https://redirect-3.net/d/52083',
