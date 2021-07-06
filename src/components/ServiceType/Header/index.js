@@ -1,3 +1,5 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import {
@@ -31,8 +33,6 @@ import VanCarIcon from '../../../assets/images/van.svg';
 import TruckCarIcon from '../../../assets/images/truck.svg';
 import YesIcon from '../../../assets/images/yes.svg';
 import NoIcon from '../../../assets/images/no.svg';
-import AllStateLogo from '../../../assets/images/alistataLogo.png';
-import NoImg from '../../../assets/images/noImg.png';
 import { companyInfo } from '../../../helpers/companyInfo';
 
 const Header = () => {
@@ -115,10 +115,12 @@ const Header = () => {
         {step === 3 && (
         <FinalStep>
           <FinalStepBox>
-            <FinalStepLogo src={AllStateLogo} />
+            <FinalStepLogo src={require(`../../../assets/images/${currentData?.logo}`).default} />
             <FinalStepDesc>Get your quote today from Allstate Car Loan company.</FinalStepDesc>
             <Button
-              onClick={() => window.location.replace(currentData?.contact?.quoteUrl)}
+              onClick={() => {
+                window.open(currentData?.contact?.quoteUrl, '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+              }}
             >
               Get Quote Now
             </Button>
@@ -127,7 +129,7 @@ const Header = () => {
               specialists will call you with customized auto loan options.
             </FooterText>
           </FinalStepBox>
-          <FinalStepImg src={NoImg} />
+          <FinalStepImg src={require(`../../../assets/images/${currentData?.cover}`).default} />
         </FinalStep>
         )}
       </Container>
