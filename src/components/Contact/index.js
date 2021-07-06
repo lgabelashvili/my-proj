@@ -20,7 +20,7 @@ const Contact = () => (
       <Title>This is example text</Title>
       <SubTitle>This is example text which will be replaced later</SubTitle>
       <Ul>
-        <Li>Carloans LTD</Li>
+        <Li>Verylinx LTD</Li>
         <Li>VAT: GE812162613</Li>
         <Li>Adress: Vazha Phshavela Avenue, 36</Li>
       </Ul>
