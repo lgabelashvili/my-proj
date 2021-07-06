@@ -2,7 +2,7 @@ import HomePage from '../pages/homePage';
 import ContactPage from '../pages/contactPage';
 import ProductsPage from '../pages/productsPage';
 import ServicePage from '../pages/servicePage';
-import Rules from '../components/Rules';
+import Rules from '../pages/rulesPage';
 
 export const routes = [
   {

@@ -14,10 +14,10 @@ const Rules = () => (
       <ContainerWrapper>
         <Title>Privacy Policy</Title>
         <Desc>
-          At Liberty Tips, accessible from libertytips.com,
+          At Verylinx, accessible from verylinx.com,
           one of our main priorities is the privacy of our visitors.
-          This Privacy Policy document contains types of information
-          that is collected and recorded by Liberty Tips and how we use it.
+          This Privacy Policy document contains types of
+          information that is collected and recorded by Verylinx and how we use it.
         </Desc>
         <Desc>
           If you have additional questions or require more information
@@ -30,10 +30,12 @@ const Rules = () => (
           this Privacy Policy depends on the Personal Information we collect
           and the specific context in which we collect the information:
         </Desc>
-        <Desc>needs to perform a contract with you</Desc>
+        <Desc>Needs to perform a contract with you</Desc>
         <Desc>You have given  permission to do so</Desc>
-        <Desc>Processing your personal information is in  legitimate interests</Desc>
-        <Desc>needs to comply with the law</Desc>
+        <Desc>
+          Processing your personal information is in
+          legitimate interests needs to comply with the law
+        </Desc>
         <Desc>
           will retain your personal information only for as long as is necessary
           for the purposes set out in this Privacy Policy. We will retain and use your
