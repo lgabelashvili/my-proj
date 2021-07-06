@@ -15,8 +15,8 @@ const Header = () => (
       <Description>
         <Title>Make Huge Savings!</Title>
         <Info>
-          Compare the best deals on a wide range of
-          financial plans including health insurance and car loans.
+          Compare the best deals on a wide range of financial
+          plans including car loans and personal finances.
         </Info>
       </Description>
       <Img src={HeaderImg} alt="" />

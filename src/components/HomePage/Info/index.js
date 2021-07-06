@@ -36,7 +36,7 @@ const Info = () => (
           <BoxTitle>ABOUT US</BoxTitle>
           <Title>Who We Are</Title>
           <Desc>
-            Here at CARLOANS.com we pride ourselves on professional service.
+            Here at Veylinx.com we pride ourselves on professional service.
             Our experts compare thousands of offers across the internet to find the best deals.
           </Desc>
           {/* <Button>Read More</Button> */}

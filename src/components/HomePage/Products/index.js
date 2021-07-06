@@ -23,34 +23,18 @@ const Products = () => {
         <SelectCategory>Select a category and compare the best details</SelectCategory>
         <CategoryList>
           <Box>
-            <BoxTitle>Auto Insurance</BoxTitle>
-            <BoxDesc>
-              While driving the road is full of surprises.
-              You can protect your finances and use 24 hours auto
-            </BoxDesc>
-            <LearnMore onClick={() => history.push('/product/test')}>Learn More</LearnMore>
-          </Box>
-          <Box>
             <BoxTitle>Auto Loans</BoxTitle>
             <BoxDesc>
-              {`Auto loans are secured loans that use the car you're
-              buying as collateral. You're typically asked to pay a fixed`}
+              {`We’ve carefully reviewed all of our auto loan providers to find the very best for our customers. 
+              All of the providers we’ve selected allow you to apply online and have fast approval times.`}
             </BoxDesc>
             <LearnMore onClick={() => history.push('/product/test')}>Learn More</LearnMore>
           </Box>
           <Box>
-            <BoxTitle>Legal Help</BoxTitle>
+            <BoxTitle>Personal Finance</BoxTitle>
             <BoxDesc>
-              Carloans Legal Help is for people who
-              are handling their legal problems without a lawyer
-            </BoxDesc>
-            <LearnMore onClick={() => history.push('/product/test')}>Learn More</LearnMore>
-          </Box>
-          <Box>
-            <BoxTitle>Auto Insurance</BoxTitle>
-            <BoxDesc>
-              While driving the road is full of surprises.
-              You can protect your finances and use 24 hours auto
+              All of the personal finance providers we’ve selected
+              allow you to apply online and have fast approval times.
             </BoxDesc>
             <LearnMore onClick={() => history.push('/product/test')}>Learn More</LearnMore>
           </Box>

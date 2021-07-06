@@ -63,7 +63,8 @@ export const SelectCategory = styled.p`
 export const CategoryList = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, minmax(max-content, 0));
+  justify-content: center;
   grid-gap: 20px;
   margin-top: 90px;
     @media (${({ theme }) => theme.device.laptopL}) { 
